@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Loading…</title>
+<meta charset="UTF-8">
+<title>Redirecting…</title>
+<script>
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/iPhone|iPad|iPod/.test(userAgent)) {
+    window.location.href = "https://apps.apple.com/redeem?ctx=offercodes&id=6739776891&code=RFXBLACKFRIDAY2025";
+  }
+  else if (/android/i.test(userAgent)) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.recruitfluency.rfx.rfx&pcampaignid=web_share";
+  }
+  else {
+    window.location.href = "https://recruitfluency.com/rfx-soccer";
+  }
+</script>
 </head>
 <body>
-<p>Setting up…</p>
+  <p>Redirecting…</p>
 </body>
 </html>
