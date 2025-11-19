@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Redirecting…</title>
-<script>
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  <meta charset="UTF-8" />
+  <title>RFX Soccer – 50% Off Black Friday</title>
 
-  if (/iPhone|iPad|iPod/.test(userAgent)) {
-    window.location.href = "https://apps.apple.com/redeem?ctx=offercodes&id=6739776891&code=RFXBLACKFRIDAY2025";
-  }
-  else if (/android/i.test(userAgent)) {
-    window.location.href = "https://play.google.com/store/apps/details?id=com.recruitfluency.rfx.rfx&pcampaignid=web_share";
-  }
-  else {
-    window.location.href = "https://recruitfluency.com/rfx-soccer";
-  }
-</script>
+  <!-- Open Graph: controls link preview in Instagram, iMessage, etc. -->
+  <meta property="og:title" content="RFX Soccer – 50% Off Black Friday" />
+  <meta property="og:description" content="Get 50% OFF a full year of the RFX Soccer app. Available on Apple and Android for a limited time." />
+  <meta property="og:url" content="https://recruitfluency.com/rfx-soccer" />
+  <!-- Replace this image URL with a real image hosted on your site -->
+  <meta property="og:image" content="https://recruitfluency.com/path-to-your-black-friday-image.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- (Optional but nice) Twitter preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RFX Soccer – 50% Off Black Friday" />
+  <meta name="twitter:description" content="Exclusive early access to 50% OFF RFX Soccer for a full year. Tap to redeem on Apple or Android." />
+  <meta name="twitter:image" content="https://recruitfluency.com/path-to-your-black-friday-image.png" />
+
+  <script>
+    // Smart redirect based on device
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // iOS → App Store offer code
+    if (/iPhone|iPad|iPod/.test(userAgent)) {
+      window.location.href = "https://apps.apple.com/redeem?ctx=offercodes&id=6739776891&code=RFXBLACKFRIDAY2025";
+    }
+    // Android → Google Play
+    else if (/android/i.test(userAgent)) {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.recruitfluency.rfx.rfx&pcampaignid=web_share";
+    }
+    // Desktop → your website (or promo page)
+    else {
+      window.location.href = "https://recruitfluency.com/rfx-soccer";
+    }
+  </script>
 </head>
 <body>
-  <p>Redirecting…</p>
+  <p>Redirecting to RFX Soccer…</p>
 </body>
 </html>
